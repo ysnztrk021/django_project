@@ -1,0 +1,322 @@
+<head>
+	<!--- basic page needs
+    ================================================== -->
+	<meta charset="utf-8" />
+	<title>Kards</title>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<!-- mobile specific metas
+    ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<!-- CSS
+    ================================================== -->
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'CV/css/base.css' %}" />
+	<link rel="stylesheet" href="{% static 'CV/css/main.css' %}" />
+	<link rel="stylesheet" href="{% static 'CV/css/vendor.css' %}" />
+
+	<!-- script
+    ================================================== -->
+	<script src="{% static 'CV/js/modernizr.js' %}"></script>
+	<script src="{% static 'CV/js/pace.min.js' %}"></script>
+
+	<!-- favicons
+     ================================================== -->
+	<link rel="icon" type="image/png" href="{% static 'CV/images/favicon.png' %}" />
+</head>
+
+<body id="top">
+	<header>
+		<div class="row">
+			<div class="top-bar">
+				<div class="logo">
+					<a href="http://127.0.0.1:8000/CV/">YAMO</a>
+				</div>
+			</div>
+			<!-- /top-bar -->
+		</div>
+		<!-- /row -->
+	</header>
+	<!-- /header -->
+	<!-- Portfolio Section
+       ================================================== -->
+	<section id="portfolio">
+		<div class="row section-intro">
+			<div class="col-twelve">
+				<h5>Portfolio</h5>
+				<h1>Check Out Some of My Works.</h1>
+
+				<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+			</div>
+		</div>
+		<!-- /section-intro-->
+
+		<div class="row portfolio-content">
+			<div class="col-twelve">
+				<!-- portfolio-wrapper -->
+				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="{% static 'Portfolio/images/portfolio/liberty.jpg' %}" alt="Shooter" />
+							<a href="#modal-01" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Shooter</h3>
+										<span class="folio-types"> Pygame </span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /folio-item -->
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="{% static 'Portfolio/images/portfolio/shutterbug.jpg' %}" alt="Up Down" />
+							<a href="#modal-02" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Up Down</h3>
+										<span class="folio-types"> Python </span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /folio-item -->
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="{% static 'Portfolio/images/portfolio/clouds.jpg' %}" alt="Video Center" />
+							<a href="#modal-03" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Video Center</h3>
+										<span class="folio-types"> Symfony </span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /folio-item -->
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="{% static 'Portfolio/images/portfolio/beetle.jpg' %}" alt="Hangman" />
+							<a href="#modal-04" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Hangman</h3>
+										<span class="folio-types"> Python </span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /folio-item -->
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="{% static 'Portfolio/images/portfolio/lighthouse.jpg' %}" alt="RPS" />
+							<a href="#modal-05" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Rock Paper Scissors</h3>
+										<span class="folio-types"> Python </span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /folio-item -->
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="{% static 'Portfolio/images/portfolio/salad.jpg' %}" alt="Jar Project" />
+							<a href="#modal-06" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Jar Project</h3>
+										<span class="folio-types"> Python </span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /folio-item -->
+
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="{% static 'Portfolio/images/portfolio/bookmark.jpg' %}" alt="Bookmark" />
+							<a href="#modal-07" class="overlay">
+								<div class="folio-item-table">
+									<div class="folio-item-cell">
+										<h3 class="folio-title">Bookmarks</h3>
+										<span class="folio-types"> HTML CSS JS </span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- /folio-item -->
+
+					<!-- modal popups - begin
+                ============================================================= -->
+					<div id="modal-01" class="popup-modal slider mfp-hide">
+						<div class="media">
+							<img src="{% static 'Portfolio/images/portfolio/modals/m-liberty.jpg' %}" alt="" />
+						</div>
+
+						<div class="description-box">
+							<h4>Shooter</h4>
+							<p>It is a Pygame that I didn't really made, I just code myself but I did by watching a Youtube video</p>
+
+							<div class="categories">Pygame</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/ysnztrk021/pygame_project">Python</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+					</div>
+					<!-- /modal-01 -->
+
+					<div id="modal-02" class="popup-modal slider mfp-hide">
+						<div class="media">
+							<img src="{% static 'Portfolio/images/portfolio/modals/m-shutterbug.jpg' %}" alt="" />
+						</div>
+
+						<div class="description-box">
+							<h4>Up Down</h4>
+							<p>I did an Up Down Game with python, the computer is chosing a number randomly and when your gess is less it says up and when it's higher it says down. I made in 2 languages, and there are 3 levels, First level is between 1 and 100, Second 1 and 1000 and Third is 1 and 10000</p>
+
+							<div class="categories">Python</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/ysnztrk021/up_down_project">Python</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+					</div>
+					<!-- /modal-02 -->
+
+					<div id="modal-03" class="popup-modal slider mfp-hide">
+						<div class="media">
+							<img src="{% static 'Portfolio/images/portfolio/modals/m-clouds.jpg' %}" alt="" />
+						</div>
+
+						<div class="description-box">
+							<h4>Video Center</h4>
+							<p>It is a project for the symfony course, we had to do a youtube-like site on symfony in the summer vacation</p>
+
+							<div class="categories">Web Development</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/ysnztrk021/projet_video_center">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+					</div>
+					<!-- /modal-03 -->
+
+					<div id="modal-04" class="popup-modal slider mfp-hide">
+						<div class="media">
+							<img src="{% static 'Portfolio/images/portfolio/modals/m-beetle.jpg' %}" alt="" />
+						</div>
+
+						<div class="description-box">
+							<h4>Hangman</h4>
+							<p>It is a hangman project made for the python course that I took.</p>
+
+							<div class="categories">Python</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/ysnztrk021/hangman_project">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+					</div>
+					<!-- /modal-04 -->
+
+					<div id="modal-05" class="popup-modal slider mfp-hide">
+						<div class="media">
+							<img src="{% static 'Portfolio/images/portfolio/modals/m-lighthouse.jpg' %}" alt="" />
+						</div>
+
+						<div class="description-box">
+							<h4>Rock Paper Scissors</h4>
+							<p>I made a Rock Paper Scissors game with pyton</p>
+
+							<div class="categories">Python</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/ysnztrk021/rps_project">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+					</div>
+					<!-- /modal-05 -->
+
+					<div id="modal-06" class="popup-modal slider mfp-hide">
+						<div class="media">
+							<img src="{% static 'Portfolio/images/portfolio/modals/m-salad.jpg' %}" alt="" />
+						</div>
+
+						<div class="description-box">
+							<h4>Fortune Jar Project</h4>
+							<p>Fortune Jar game is a game where you have to find the right jar which conatins the treasure</p>
+
+							<div class="categories">Python</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://github.com/ysnztrk021/jar_project">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+					</div>
+					<!-- /modal-06 -->
+
+					<div id="modal-07" class="popup-modal slider mfp-hide">
+						<div class="media">
+							<img src="{% static 'Portfolio/images/portfolio/modals/m-bookmark.jpg' %}" alt="" />
+						</div>
+
+						<div class="description-box">
+							<h4>Bookmark</h4>
+							<p>It's made for myself a bookmark where it contains all the manga I'm reading and all the sites I use oftenly</p>
+
+							<div class="categories">Web Development</div>
+						</div>
+
+						<div class="link-box">
+							<a target="_blank" href="https://ysnztrk021.github.io/favorites">Details</a>
+							<a href="#" class="popup-modal-dismiss">Close</a>
+						</div>
+					</div>
+					<!-- /modal-07 -->
+
+					<!-- modal popups - end
+                ============================================================= -->
+				</div>
+				<!-- /portfolio-wrapper -->
+			</div>
+			<!-- /twelve -->
+		</div>
+		<!-- /portfolio-content -->
+	</section>
+	<!-- /portfolio -->
+
+	<!-- contact footer
+   ================================================== -->
+	{% block body %}
+	{% include 'CV/contact.html' %}
+	{% endblock body %}
+
+	<!-- Java Script
+   ================================================== -->
+	<script src="{% static 'CV/js/jquery-2.1.3.min.js'%}"></script>
+	<script src="{% static 'CV/js/plugins.js' %}"></script>
+	<script src="{% static 'CV/js/main.js'%}"></script>
+</body>
